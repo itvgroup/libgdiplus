@@ -2207,7 +2207,7 @@ gdip_bitmap_ensure_surface (GpBitmap *bitmap)
 
 	switch (data->pixel_format) {
 	case PixelFormat24bppRGB:
-		format = CAIRO_FORMAT_RGB24;
+		format = CAIRO_FORMAT_ARGB32; //CAIRO_FORMAT_RGB24;
 		break;
 
 	case PixelFormat32bppARGB:	/* premultiplication is required */
